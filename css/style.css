@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: whitesmoke;
+}
+header{
+    margin-top: 0px;
+    text-align: center;
+    background-color: #333;
+    color: whitesmoke;
+    min-height: 50px;
+    font-size: x-large;
+}
+header h1{
+    margin-top: 0;
+    padding: 1%;
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+#resulte{
+    width: 20%;
+    display: inline-block;
+    border: 1px double;
+    padding: 20px;
+    float: left;
+    margin: 0px 20px;
+    background-color: rgb(118, 116, 214);
+    min-height: 421px;
+    position: relative;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+#sec-bar{
+    width: 75%;
+    display: inline-block;
+    border: 1px double;
+    padding: 20px;
+    float: right;
+    margin-right:20px ;
+    background-color:  rgb(118, 116, 214);
+    min-height: 421px;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+.imgs{
+    display: inline-block;
+    margin-right:7%;
+    
+}
+section img {
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+#uolist{
+    font-size:x-small;
+    padding: 10px;
+    text-align: justify;
+    color:#444;
+    list-style:circle ;
+}
+button{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+footer{
+    background-color: #333;
+    clear: both;
+    text-align: center;
+    min-height: 50px;
+    color: whitesmoke;
+}
+footer p{
+    padding: 1%;
+}
+h3{
+    margin-top: 0;
+    color: #444;
+}
+#renderResulte{
+    background-color: rgb(118, 116, 214);
+    color: #444; 
+    border-radius: 30%;
+    border: 2px solid whitesmoke;
+
+}
+  
+#renderResulte:hover{
+    background-color: whitesmoke;
+    
+}
