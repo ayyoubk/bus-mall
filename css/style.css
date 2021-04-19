@@ -21,7 +21,7 @@ header h1{
 #resulte{
     width: 20%;
     display: inline-block;
-    border: 1px double;
+    border: 3px solid;
     padding: 20px;
     float: left;
     margin: 0px 20px;
@@ -34,13 +34,13 @@ header h1{
 #sec-bar{
     width: 75%;
     display: inline-block;
-    border: 1px double;
+    border: 3px solid;
     padding: 20px;
     float: right;
     margin-right:20px ;
     background-color:  rgb(118, 116, 214);
     min-height: 421px;
-    
+    margin-bottom: 30px;
     font-family: 'Noto Sans TC', sans-serif;
     
 }
@@ -90,9 +90,17 @@ h3{
 }
   
 #renderResulte:hover{
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245);
     
 }
-#chart{
-    clear: both;
+#myChart{
+    text-align: center;
+    font-size: xx-large;
+    background-color: rgb(118, 116, 214);
+    margin: 20px;
+    min-height: 50%;
+    width: 1458.9px;
+    min-height: 100px;
+    max-height: 200px;
+    border: 3px solid;
 }

@@ -30,6 +30,8 @@
     8. After voting rounds have been completed, remove the event listeners on the product.
     9. Add a button (View Results), which when clicked displays the list of all the products followed by the votes received, and number of times seen for each.
 
-
+- April 19, 2021
+    1. prevent seeing the same image in two subsequent iterations useing `.includes()`
+    2. visual representation of how many times a product was clicked using chart.js
 
 
