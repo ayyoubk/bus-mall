@@ -3,7 +3,7 @@
 let firstImage = document.getElementById('img1');
 let secImage = document.getElementById('img2');
 let thrdImage = document.getElementById('img3');
-
+let indexArr=[];
 let theCount = 0;
 let maxAttempts = 25;
 let agree = confirm('Do you agree to vote for 25 rounds?');
@@ -12,9 +12,9 @@ if (agree) {
 }else{
   maxAttempts=parseInt(prompt('Enter the number of rounds you would like to take'));
 }
-let firstIndex;
-let secIndex;
-let thrdIndex;
+let firstIndex=55;
+let secIndex=55;
+let thrdIndex=55;
 
 function Product(name,path){
   this.name= name;
@@ -52,14 +52,18 @@ function randomIndex(){
 }
 
 function renderImages(){
+  indexArr=[];
+  indexArr.push(firstIndex,secIndex,thrdIndex);
   firstIndex=randomIndex();
   secIndex=randomIndex();
   thrdIndex=randomIndex();
 
-  while (firstIndex===secIndex || firstIndex===thrdIndex || secIndex===thrdIndex) {
+  while (firstIndex===secIndex || firstIndex===thrdIndex || secIndex===thrdIndex || indexArr.includes(firstIndex) || indexArr.includes(secIndex) || indexArr.includes(thrdIndex)) {
     firstIndex=randomIndex();
     secIndex=randomIndex();
+    thrdIndex=randomIndex();
   }
+
   firstImage.src=Product.allImages[firstIndex].path;
   secImage.src=Product.allImages[secIndex].path;
   thrdImage.src=Product.allImages[thrdIndex].path;
@@ -91,6 +95,8 @@ function byClicking(event){
     thrdImage.removeEventListener('click', byClicking);
   }
 }
+
+
 
 function renderList(){
   let uList = document.getElementById('uolist');
