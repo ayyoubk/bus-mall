@@ -99,6 +99,7 @@ function renderList(){
     uList.appendChild(liElement);
     liElement.textContent = `${Product.allImages[i].name} had ${Product.allImages[i].votes} votes, seen ${Product.allImages[i].timeShown} times.`;
   }
+  renderResulte.removeEventListener('click', renderList);
 }
 
 let renderResulte=document.getElementById('renderResulte');
