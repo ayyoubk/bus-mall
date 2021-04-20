@@ -77,6 +77,7 @@ function renderImages(){
 
 }
 renderImages();
+getProductfromLs();
 section.addEventListener('click', byClicking);
 // firstImage.addEventListener('click', byClicking);
 // secImage.addEventListener('click', byClicking);
@@ -94,10 +95,12 @@ function byClicking(event){
     renderImages();
     console.log(Product.allImages);
   }else {
-    firstImage.removeEventListener('click', byClicking);
-    secImage.removeEventListener('click', byClicking);
-    thrdImage.removeEventListener('click', byClicking);
+    section.removeEventListener('click', byClicking);
+    // firstImage.removeEventListener('click', byClicking);
+    // secImage.removeEventListener('click', byClicking);
+    // thrdImage.removeEventListener('click', byClicking);
   }
+  storageTool();
 }
 
 let arrOfVotes = [];
@@ -141,4 +144,15 @@ function chart(){
       }]
     }
   });
+}
+function storageTool(){
+  let storedArr = JSON.stringify(Product.allImages);
+  localStorage.setItem('storedProduct', storedArr);
+}
+function getProductfromLs(){
+  let data = localStorage.getItem('storedProduct');
+  let votedProduct = JSON.parse(data);
+  if(votedProduct !== null){
+    Product.allImages = votedProduct;
+  }
 }
