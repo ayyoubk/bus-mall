@@ -11,7 +11,7 @@ header{
     background-color: #333;
     color: whitesmoke;
     min-height: 50px;
-    font-size: x-large;
+    font-size: large;
 }
 header h1{
     margin-top: 0;
@@ -44,10 +44,23 @@ header h1{
     font-family: 'Noto Sans TC', sans-serif;
     
 }
+#img1{
+    margin-left: 50px;
+    border:2px solid #333;
+}
+#img2{
+    border:2px solid #333;
+}
+#img3{
+    border:2px solid #333;
+}
 .imgs{
     display: inline-block;
     margin-right:7%;
     
+}
+.imgs:hover{
+    transform: scale(1.2);
 }
 section img {
     height: 200px;
